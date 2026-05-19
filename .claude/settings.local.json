@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\derek\\\\Documents\\\\isometricgym\\\\public\" -Recurse | Where-Object { $_.Extension -match '\\\\.\\(mp4|mov|webm\\)' })"
+    ]
+  }
+}
