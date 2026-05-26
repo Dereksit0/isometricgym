@@ -20,7 +20,7 @@ const SERVICES = [
       "Planes diseñados específicamente para tus objetivos, tu nivel y tu estilo de vida. Atención uno a uno con nuestros especialistas.",
   },
   {
-    emoji: "♿️",
+    emoji: "💆",
     title: "Fisioterapia",
     description:
       "Recupera tu movilidad y previene lesiones. Nuestros fisioterapeutas certificados te acompañan en cada etapa de tu rehabilitación.",

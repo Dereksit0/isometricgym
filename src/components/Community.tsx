@@ -1,5 +1,6 @@
 import Image from "next/image";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { WA_URL } from "@/lib/constants";
 
 const STATS = [
   { num: "500+", label: "Miembros Activos" },
@@ -53,15 +54,14 @@ export default function Community() {
 
         {/*
           Gallery layout (desktop, 3 cols):
-          Row 1: [ img1 (col-span-2, wide) ]  [ img2 ]
-          Row 2: [ img3 ]  [ img4 ]  [ img5 ]
-          Row 3: [       img6 (col-span-3, full width)       ]
-
+          Row 1: [ img1 (col-span-2) ]  [ img2 ]
+          Row 2: [ img3 ] [ img4 ] [ img5 ]
+          Row 3: [ img6 (col-span-2) ]  [ img7 ]
           Mobile (2 cols):
-          [  img1 (col-span-2)  ]
+          [ img1 (col-span-2) ]
           [ img2 ] [ img3 ]
           [ img4 ] [ img5 ]
-          [  img6 (col-span-2)  ]
+          [ img6 ] [ img7 ]
         */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
 
@@ -69,8 +69,8 @@ export default function Community() {
           <AnimateOnScroll animation="scale-in" delay={0} className="col-span-2 md:col-span-2">
             <div className="relative w-full aspect-[16/9] md:aspect-[16/8] rounded-2xl overflow-hidden">
               <Image
-                src="/imgs/comunidad1.jpg"
-                alt="Comunidad IsometricGym"
+                src="/imgs/comunidad1.webp"
+                alt="Comunidad IsometricGym entrenando"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 768px) 100vw, 66vw"
@@ -81,10 +81,10 @@ export default function Community() {
 
           {/* img2 */}
           <AnimateOnScroll animation="scale-in" delay={80}>
-            <div className="relative w-full aspect-square md:aspect-[8/8] rounded-2xl overflow-hidden">
+            <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
               <Image
-                src="/imgs/comunidad2.jpg"
-                alt="Entrenamiento en equipo"
+                src="/imgs/comunidad2.webp"
+                alt="Entrenamiento en equipo ISO"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 768px) 50vw, 33vw"
@@ -97,7 +97,7 @@ export default function Community() {
           <AnimateOnScroll animation="scale-in" delay={120}>
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
               <Image
-                src="/imgs/comunidad3.jpg"
+                src="/imgs/comunidad3.webp"
                 alt="Sesión ISO"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
@@ -111,7 +111,7 @@ export default function Community() {
           <AnimateOnScroll animation="scale-in" delay={160}>
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
               <Image
-                src="/imgs/comunidad4.jpg"
+                src="/imgs/comunidad4.webp"
                 alt="Team ISO"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
@@ -125,7 +125,7 @@ export default function Community() {
           <AnimateOnScroll animation="scale-in" delay={200}>
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
               <Image
-                src="/imgs/comunidad5.jpg"
+                src="/imgs/comunidad5.webp"
                 alt="Comunidad en acción"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
@@ -135,15 +135,29 @@ export default function Community() {
             </div>
           </AnimateOnScroll>
 
-          {/* img6 — full width bottom */}
-          <AnimateOnScroll animation="scale-in" delay={250} className="col-span-2 md:col-span-3">
-            <div className="relative w-full aspect-[16/6] md:aspect-[21/7] rounded-2xl overflow-hidden">
+          {/* img6 — wide */}
+          <AnimateOnScroll animation="scale-in" delay={240} className="col-span-2 md:col-span-2">
+            <div className="relative w-full aspect-[16/9] md:aspect-[16/8] rounded-2xl overflow-hidden">
               <Image
-                src="/imgs/comunidad6.jpg"
-                alt="IsometricGym comunidad"
+                src="/imgs/comunidad6.webp"
+                alt="IsometricGym comunidad Puebla"
                 fill
                 className="object-cover object-center hover:scale-105 transition-transform duration-700"
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, 66vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050601]/50 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
+            </div>
+          </AnimateOnScroll>
+
+          {/* img7 — nueva */}
+          <AnimateOnScroll animation="scale-in" delay={280}>
+            <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
+              <Image
+                src="/imgs/comunidad7.webp"
+                alt="Miembros IsometricGym"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-700"
+                sizes="(max-width: 768px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#050601]/50 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
             </div>
@@ -158,7 +172,7 @@ export default function Community() {
             paso — y nosotros estamos aquí para acompañarte.
           </p>
           <a
-            href="https://wa.me/522224462597?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20los%20planes%20de%20IsometricGym"
+            href={WA_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="glow-yellow inline-block px-8 py-4 bg-[#FFDE00] text-[#050601] font-bold text-sm uppercase tracking-[0.15em] rounded-full hover:bg-white hover:scale-105 transition-all duration-300"

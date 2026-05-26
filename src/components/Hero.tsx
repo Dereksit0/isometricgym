@@ -1,6 +1,5 @@
 import Image from "next/image";
-
-const WA = "https://wa.me/522224462597?text=";
+import { WA_URL } from "@/lib/constants";
 
 export default function Hero() {
   return (
@@ -8,11 +7,12 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background */}
+      {/* Decorative background — alt="" hides it from screen readers */}
       <div className="absolute inset-0">
         <Image
-          src="/imgs/banner.png"
-          alt="IsometricGym"
+          src="/imgs/banner.webp"
+          alt=""
+          role="presentation"
           fill
           className="object-cover object-center"
           priority
@@ -43,15 +43,16 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
           <a
-            href={`${WA}${encodeURIComponent("Hola, me gustaría conocer más sobre los planes de IsometricGym")}`}
+            href={WA_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="glow-yellow px-7 py-3.5 bg-[#FFDE00] text-[#050601] font-bold text-xs uppercase tracking-[0.15em] rounded-full hover:bg-white hover:scale-105 transition-all duration-300 min-w-[230px] text-center"
           >
             Inicia Tu Transformación
           </a>
+          {/* Fixed: was #testimonios which shows videos, not gym photos */}
           <a
-            href="#testimonios"
+            href="#comunidad"
             className="px-7 py-3.5 bg-transparent text-white/70 font-bold text-xs uppercase tracking-[0.15em] rounded-full border border-white/25 hover:border-[#FFDE00]/60 hover:text-[#FFDE00] transition-all duration-300 min-w-[230px] text-center"
           >
             Ver Instalaciones

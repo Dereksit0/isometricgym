@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\derek\\\\Documents\\\\isometricgym\\\\public\" -Recurse | Where-Object { $_.Extension -match '\\\\.\\(mp4|mov|webm\\)' })"
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\derek\\\\Documents\\\\isometricgym\\\\public\" -Recurse | Where-Object { $_.Extension -match '\\\\.\\(mp4|mov|webm\\)' })",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\derek\\\\Downloads\\\\isometric gym\\\\isometricgym\" -Recurse -Force)",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\derek\\\\Downloads\\\\isometric gym\\\\isometricgym\\\\public\" -Recurse | Select-Object FullName, @{Name='Size';Expression={if\\($_.PSIsContainer\\) {'<DIR>'} else {$_.Length}}} | Format-Table -AutoSize)",
+      "Bash(npm run *)",
+      "Bash(dir C:\\\\Users\\\\derek\\\\Downloads\\\\isometric gym\\\\isometricgym\\\\public\\\\imgs *)"
     ]
   }
 }

@@ -1,22 +1,22 @@
 import Image from "next/image";
 import AnimateOnScroll from "./AnimateOnScroll";
 
-// Order: coach1.jpg → coach3.jpg → coach2.jpg
+// Order: coach1.webp → coach3.webp → coach2.webp
 const COACHES = [
   {
-    image: "/imgs/coach1.jpg",
+    image: "/imgs/coach1.webp",
     name: "Carlos Reyes",
     role: "Especialista en Calistenia & Fuerza Funcional",
     bio: "Más de 8 años dedicados al entrenamiento funcional y calistenia. Transforma vidas a través del movimiento consciente.",
   },
   {
-    image: "/imgs/coach3.jpg",
+    image: "/imgs/coach3.webp",
     name: "Ana Martínez",
     role: "Instructora de Yoga & Bienestar",
     bio: "Certificada internacionalmente en Hatha y Vinyasa Yoga. Guía a sus alumnos hacia el equilibrio físico y mental.",
   },
   {
-    image: "/imgs/coach2.jpg",
+    image: "/imgs/coach2.webp",
     name: "Miguel Torres",
     role: "Fisioterapeuta & Entrenamiento Personal",
     bio: "Fisioterapeuta certificado con especialidad en rehabilitación deportiva y prevención de lesiones.",
