@@ -4,9 +4,9 @@ import AnimateOnScroll from "./AnimateOnScroll";
 import { WA_URL } from "@/lib/constants";
 
 const VIDEOS = [
+  { src: "/videos/video3.mp4", name: "— Familia ISO" },
   { src: "/videos/video1.mp4", name: "— Miembro ISO" },
   { src: "/videos/video2.mp4", name: "— Comunidad ISO" },
-  { src: "/videos/video3.mp4", name: "— Familia ISO" },
 ];
 
 function VideoCard({

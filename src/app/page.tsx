@@ -8,6 +8,7 @@ import Pricing from "@/components/Pricing";
 import Community from "@/components/Community";
 import Location from "@/components/Location";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Location />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }
