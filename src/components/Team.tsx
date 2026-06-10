@@ -5,21 +5,21 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const COACHES = [
   {
     image: "/imgs/coach1.webp",
-    name: "Carlos Reyes",
-    role: "Especialista en Calistenia & Fuerza Funcional",
-    bio: "Más de 8 años dedicados al entrenamiento funcional y calistenia. Transforma vidas a través del movimiento consciente.",
+    name: "Dorian Huerta",
+    role: "Lic. en Fisioterapia & Coach de Calistenia",
+    bio: "8 años entrenando calistenia y 7 formando atletas. Combina ciencia, técnica y pasión por el movimiento para un entrenamiento inteligente y efectivo.",
   },
   {
     image: "/imgs/coach3.webp",
-    name: "Ana Martínez",
-    role: "Instructora de Yoga & Bienestar",
-    bio: "Certificada internacionalmente en Hatha y Vinyasa Yoga. Guía a sus alumnos hacia el equilibrio físico y mental.",
+    name: "Gaby Avendaño",
+    role: "Coach de Calistenia & Funcional",
+    bio: "Estudiante de Gestión de Entrenamiento Deportivo y apasionada del movimiento. Te ayuda a desarrollar fuerza, resistencia y control corporal para superar tus límites.",
   },
   {
     image: "/imgs/coach2.webp",
-    name: "Miguel Torres",
-    role: "Fisioterapeuta & Entrenamiento Personal",
-    bio: "Fisioterapeuta certificado con especialidad en rehabilitación deportiva y prevención de lesiones.",
+    name: "Rogelio Hernández",
+    role: "Coach de Calistenia & Entrenamiento Funcional",
+    bio: "7 años de experiencia en calistenia. Su enfoque: mejorar tu fuerza, resistencia y control corporal. Entrena con él de 5:30 a 6:30 a.m.",
   },
 ];
 
